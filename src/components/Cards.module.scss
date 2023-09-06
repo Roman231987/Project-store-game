@@ -1,0 +1,6 @@
+@use "../index.scss" as *;
+
+.cards {
+  background-color: $color_green_light; 
+  grid-column: center-start / center-end;
+}

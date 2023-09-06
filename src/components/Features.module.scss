@@ -1,0 +1,6 @@
+@use "../index.scss" as *;
+
+.features {
+    background-color: $color_gray_light;
+    grid-column: center-start / center-end;
+}

@@ -1,0 +1,6 @@
+@use "../index.scss" as *;
+
+.gamers {
+    background-color: $color_blue_dark;
+    grid-column: col-start 7 / full-end;
+}

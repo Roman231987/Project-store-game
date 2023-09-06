@@ -1,0 +1,6 @@
+@use "../index.scss" as *;
+
+.bannerText {
+  background-color: $color_blue_dark;
+    grid-column: col-start 5 / full-end;
+}
