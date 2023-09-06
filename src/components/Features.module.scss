@@ -1,6 +1,27 @@
 @use "../index.scss" as *;
 
 .features {
-    background-color: $color_gray_light;
-    grid-column: center-start / center-end;
+  padding: 15rem 0;
+  background-color: $color_gray_light;
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-gap: 3rem 4rem;
+  align-items: start;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-gap: 1.5rem 2.5rem;
+  &__icon {
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem);
+  }
+  &__title_3 {
+    @include title_3;
+  }
+  &__text {
+    @include text;
+  }
 }

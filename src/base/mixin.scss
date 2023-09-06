@@ -1,0 +1,27 @@
+@mixin title_1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: white;
+}
+@mixin title_2 {
+  color: $color_gray_light;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+@mixin title_3 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: $color_green_dark;
+  &_white {
+    color: white;
+  }
+  &_green_light {
+    color: $color_gray_light;
+  }
+}
+@mixin text {
+  color: $color_green_dark;
+  font-size: 1.6rem;
+  font-weight: 400;
+ }

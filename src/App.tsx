@@ -12,33 +12,15 @@ import "./App.scss";
 function App() {
   return (
     <div className="container">
-      {/* <div className="sidebar"> */}
       <Sidebar />
-      {/* </div> */}
-      {/* <div className="header"> */}
       <Header />
-      {/* </div> */}
-      {/* <div className="gamers"> */}
       <Gamers />
-      {/* </div> */}
-      {/* <div className="feature"> */}
       <Features />
-      {/* </div> */}
-      {/* <div className="banner_img"> */}
       <BannerImg />
-      {/* </div> */}
-      {/* <div className="banner_text"> */}
       <BannerText />
-      {/* </div> */}
-      {/* <div className="cards"> */}
       <Cards />
-      {/* </div> */}
-      {/* <div className="gallery"> */}
       <Gallery />
-      {/* </div> */}
-      {/* <div className="footer"> */}
       <Footer />
-      {/* </div> */}
     </div>
   );
 }
