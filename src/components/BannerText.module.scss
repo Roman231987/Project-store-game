@@ -2,5 +2,18 @@
 
 .bannerText {
   background-color: $color_blue_dark;
-    grid-column: col-start 5 / full-end;
+  grid-column: col-start 5 / full-end;
+  padding: 0 4vw;
+  display: grid;
+  align-content: center;
+  justify-items: start;
+}
+.title_4 {
+  @include title_4;
+}
+.title_2 {
+  @include title_2;
+}
+.text {
+  margin-bottom: 4rem;
 }

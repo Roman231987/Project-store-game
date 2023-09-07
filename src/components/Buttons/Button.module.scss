@@ -1,0 +1,14 @@
+@use "../../index.scss" as *;
+
+.btn {
+  background-color: $color_green_light;
+  color: $color_gray_light;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.5rem 3rem;
+  border: none;
+  &:hover {
+    background-color: $color_green_dark;
+  }
+}

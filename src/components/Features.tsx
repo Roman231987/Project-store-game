@@ -15,7 +15,7 @@ const Features = () => {
           src={icon_steam2}
           alt="icon_features"
         />
-        <div className={styles.feature__title_3}>Лучшая игровая плаформа</div>
+        <h3 className={styles.feature__title_3}>Лучшая игровая плаформа</h3>
         <p className={styles.feature__text}>
           Как уже неоднократно упомянуто, базовые сценарии поведения
           пользователей освещают чрезвычайно интересные особенности картины.
@@ -28,7 +28,7 @@ const Features = () => {
           src={Vector_2}
           alt="icon_features"
         />
-        <div className={styles.feature__title_3}>Еженедельные турниры</div>
+        <h3 className={styles.feature__title_3}>Еженедельные турниры</h3>
         <p className={styles.feature__text}>
           Как уже неоднократно упомянуто, базовые сценарии поведения
           пользователей освещают чрезвычайно интересные особенности картины.
@@ -40,7 +40,7 @@ const Features = () => {
           src={Vector_1}
           alt="icon_features"
         />
-        <div className={styles.feature__title_3}>Онлайн общение</div>
+        <h3 className={styles.feature__title_3}>Онлайн общение</h3>
         <p className={styles.feature__text}>
           Как уже неоднократно упомянуто, базовые сценарии поведения
           пользователей освещают чрезвычайно интересные особенности картины.
@@ -48,7 +48,7 @@ const Features = () => {
       </div>
       <div className={styles.feature}>
         <img className={styles.feature__icon} src={earth} alt="icon_features" />
-        <div className={styles.feature__title_3}>Сообщество во всем мире</div>
+        <h3 className={styles.feature__title_3}>Сообщество во всем мире</h3>
         <p className={styles.feature__text}>
           Как уже неоднократно упомянуто, базовые сценарии поведения
           пользователей освещают чрезвычайно интересные особенности картины.
@@ -60,7 +60,7 @@ const Features = () => {
           src={bubbles2}
           alt="icon_features"
         />
-        <div className={styles.feature__title_3}>Онлайн чат с поддержкой</div>
+        <h3 className={styles.feature__title_3}>Онлайн чат с поддержкой</h3>
         <p className={styles.feature__text}>
           Как уже неоднократно упомянуто, базовые сценарии поведения
           пользователей освещают чрезвычайно интересные особенности картины.
@@ -72,7 +72,7 @@ const Features = () => {
           src={Vector}
           alt="icon_features"
         />
-        <div className={styles.feature__title_3}>Удобная система оплаты</div>
+        <h3 className={styles.feature__title_3}>Удобная система оплаты</h3>
         <p className={styles.feature__text}>
           Как уже неоднократно упомянуто, базовые сценарии поведения
           пользователей освещают чрезвычайно интересные особенности картины.

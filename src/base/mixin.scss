@@ -20,8 +20,10 @@
     color: $color_gray_light;
   }
 }
-@mixin text {
-  color: $color_green_dark;
-  font-size: 1.6rem;
-  font-weight: 400;
- }
+@mixin title_4 {
+  color: $color_green_light;
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: .2.21rem;
+}
+

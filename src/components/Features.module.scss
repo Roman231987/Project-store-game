@@ -22,6 +22,6 @@
     @include title_3;
   }
   &__text {
-    @include text;
+   color: $color_green_dark;
   }
 }
