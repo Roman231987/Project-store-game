@@ -12,24 +12,34 @@ const Gamers = () => {
         TOP 3 PLAYERS
       </div>
 
-      <img className={styles.gamers_img} src={gamer_1} alt="фото гравця" />
-      <div className={styles.gamers_text}>
-        <div className={`${styles.title_3} ${styles.title_3__white}`}>
-          Лиза Фролова
+      <div className={styles.gamers_box}>
+        <img className={styles.gamers_img} src={gamer_1} alt="фото гравця" />
+        <div className={styles.gamers_text}>
+          <div className={`${styles.title_3} ${styles.title_3__white}`}>
+            Лиза Фролова
+          </div>
+          <p className={styles.gamers_score}>score 2953</p>
         </div>
-        <p className={styles.gamers_score}>score 2953</p>
       </div>
 
-      <img className={styles.gamers_img} src={gamer_2} alt="фото гравця" />
-      <div className={styles.gamers_text}>
-        <div className={styles.title_3__white}>Лиза Фролова</div>
-        <p className={styles.gamers_score}>score 2953</p>
+      <div className={styles.gamers_box}>
+        <img className={styles.gamers_img} src={gamer_2} alt="фото гравця" />
+        <div className={styles.gamers_text}>
+          <div className={`${styles.title_3} ${styles.title_3__white}`}>
+            Андрей Степанов
+          </div>
+          <p className={styles.gamers_score}>score 2953</p>
+        </div>
       </div>
 
-      <img className={styles.gamers_img} src={gamer_3} alt="фото гравця" />
-      <div className={styles.gamers_text}>
-        <div className={styles.title_3__white}>Лиза Фролова</div>
-        <p className={styles.gamers_score}>score 2953</p>
+      <div className={styles.gamers_box}>
+        <img className={styles.gamers_img} src={gamer_3} alt="фото гравця" />
+        <div className={styles.gamers_text}>
+          <div className={`${styles.title_3} ${styles.title_3__white}`}>
+            Иван Савельев
+          </div>
+          <p className={styles.gamers_score}>score 2953</p>
+        </div>
       </div>
     </div>
   );

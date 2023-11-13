@@ -4,15 +4,17 @@
   background: url(../img/header_background.png) center / cover no-repeat;
   background-color: $color_blue_dark;
   grid-column: full-start / col-end 6;
-  padding: 5rem 5rem 5rem 6rem;
+  padding: 5rem 5rem 5rem 5rem;
 
   display: grid;
   grid-template-rows: 1fr min-content minmax(10rem, min-content) 1fr;
+  @include respond(tab-port_830px) {
+    grid-column: full-start / fell-end;
+  }
   &__btn {
     align-self: start;
     justify-self: start;
   }
-
   &__line_text {
     color: $color_gray_dark;
     font-size: 1.6rem;

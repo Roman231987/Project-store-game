@@ -26,3 +26,30 @@
   font-weight: 300;
   letter-spacing: 0.2.21rem;
 }
+
+@mixin respond($breakpoint) {
+  
+  @if $breakpoint == tab-land_1170px {
+    @media only screen and (max-width:1170px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port_830px {
+    @media only screen and (max-width:830px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone_450px {
+    @media only screen and (max-width: 450px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-screen_1800 {
+    @media only screen and (min-width: 1800px) {
+      @content;
+    }
+  }
+}

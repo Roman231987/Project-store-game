@@ -4,10 +4,27 @@
   background-color: $color_blue_dark;
   grid-column: col-start 7 / full-end;
   display: grid;
-  grid-template-columns: min-content max-content;
+  grid-template-columns: max-content;
   grid-gap: 4rem 2rem;
   align-content: center;
   justify-content: center;
+  @include respond(tab-port_830px) {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-items: center;
+    padding: 5rem 0;
+  }
+  @include respond(phone_450px) {
+    grid-template-columns: min-content;
+    justify-items: start;
+  }
+  &_box {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-column-gap: 2rem;
+    @include respond(tab-port_830px) {
+    }
+  }
   &_title {
     grid-column: 1 / -1;
     justify-self: center;
@@ -23,7 +40,6 @@
     font-size: 1.6rem;
     font-weight: 300;
   }
-
   .title_3 {
     @include title_3;
   }

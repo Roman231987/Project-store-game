@@ -6,4 +6,7 @@
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 4rem 6rem;
   padding: 15rem 0;
+  @include respond(phone_450px) {
+    padding: 5rem 0;
+  }
 }
