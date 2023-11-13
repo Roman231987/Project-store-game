@@ -1,7 +1,11 @@
-import styles from "./Sidebar.module.scss"
+import styles from "./Sidebar.module.scss";
 
 const Sidebar = () => {
-    return <div className={styles.sidebar}>Sidebar</div>;
-}
+  return (
+    <div className={styles.sidebar}>
+      <button className={styles.hamburger}></button>
+    </div>
+  );
+};
 
 export default Sidebar;

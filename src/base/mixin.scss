@@ -13,17 +13,16 @@
   font-size: 1.9rem;
   font-weight: 700;
   color: $color_green_dark;
-  &_white {
+  &__white {
     color: white;
   }
-  &_green_light {
-    color: $color_gray_light;
+  &__green_light {
+    color: $color_green_light;
   }
 }
 @mixin title_4 {
   color: $color_green_light;
   font-size: 1.7rem;
   font-weight: 300;
-  letter-spacing: .2.21rem;
+  letter-spacing: 0.2.21rem;
 }
-

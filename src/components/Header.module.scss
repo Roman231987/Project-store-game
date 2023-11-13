@@ -1,6 +1,58 @@
 @use "../index.scss" as *;
 
 .header {
-    background-color: $color_blue_dark;
-    grid-column: full-start / col-end 6;
+  background: url(../img/header_background.png) center / cover no-repeat;
+  background-color: $color_blue_dark;
+  grid-column: full-start / col-end 6;
+  padding: 5rem 5rem 5rem 6rem;
+
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(10rem, min-content) 1fr;
+  &__btn {
+    align-self: start;
+    justify-self: start;
+  }
+
+  &__line_text {
+    color: $color_gray_dark;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    &::before,
+    &::after {
+      content: "";
+      height: 0.1rem;
+      display: block;
+      background-color: $color_gray_dark;
+    }
+  }
+  &__img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-gap: 2rem;
+  }
+  &__img img {
+    height: 2.8rem;
+    filter: brightness(70%);
+  }
+}
+
+.title_4 {
+  @include title_4;
+}
+.title_1 {
+  @include title_1;
+}
+
+.logo {
+  display: block;
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
 }

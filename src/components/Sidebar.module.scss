@@ -1,7 +1,30 @@
 @use "../index.scss" as *;
 
 .sidebar {
-    background-color: $color_green_dark;
-    grid-column: sidebar-start / sidebar-end ;
-    grid-row: 1 / -1;
+  background-color: $color_green_dark;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1;
+  padding-top: 3.7rem;
+  display: flex;
+ justify-content: center;
+}
+.hamburger {
+  border: none;
+  background-color: $color_gray_light;
+  width: 4.5rem;
+  height: 0.2rem;
+  &::before,
+  &::after {
+    content: "";
+    background-color: $color_gray_light;
+    width: 4.5rem;
+    height: 0.2rem;
+    display: block;
+  }
+  &::before {
+    transform: translateY(-1.5rem);
+  }
+  &::after {
+    transform: translateY(1.5rem);
+  }
 }

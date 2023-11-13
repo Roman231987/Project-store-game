@@ -1,6 +1,30 @@
 @use "../index.scss" as *;
 
 .gamers {
-    background-color: $color_blue_dark;
-    grid-column: col-start 7 / full-end;
+  background-color: $color_blue_dark;
+  grid-column: col-start 7 / full-end;
+  display: grid;
+  grid-template-columns: min-content max-content;
+  grid-gap: 4rem 2rem;
+  align-content: center;
+  justify-content: center;
+  &_title {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  &_img {
+    width: 7rem;
+  }
+  &_text {
+    align-self: center;
+  }
+  &_score {
+    color: $color_gray_dark;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  .title_3 {
+    @include title_3;
+  }
 }

@@ -1,6 +1,45 @@
 @use "../index.scss" as *;
 
 .footer {
-    background-color: $color_blue_dark;
-    grid-column: full-start / full-end;
+  padding: 8rem 3rem;
+  border-top: 0.3rem solid $color_gray_light;
+  background-color: $color_blue_dark;
+  grid-column: full-start / full-end;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 8rem;
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.nav {
+  &__list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-items: center;
+    grid-gap: 3.5rem;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.6rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: $color_gray_light;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+      transition: 0.3s all;
+      &:hover,
+      &:active {
+        color: $color_green_dark;
+        transform: translateY(-0.3rem);
+      }
+    }
+  }
 }
